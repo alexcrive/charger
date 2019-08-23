@@ -1,0 +1,44 @@
+
+
+.testimonials__slider .owl-carousel .owl-nav button.owl-next, .testimonials__slider .owl-carousel .owl-nav button.owl-prev, .testimonials__slider{
+	outline:none;
+	z-index: 10;
+}
+
+.testimonials__slider .owl-carousel .owl-nav button.owl-next {
+	position: absolute;
+	top: 5%;
+    right: 5%;
+    opacity: 0.6;
+    @media(min-width: 768px) {
+    	right: 15%;
+    }
+    .transit(0.4s);
+	&:hover {
+		.scaled();
+	    opacity: 1;
+	}
+}
+
+ .testimonials__slider .owl-carousel .owl-nav button.owl-prev {
+	position: absolute;
+	top: 5%;
+    left: 5%;
+    opacity: 0.6;
+    -webkit-transition: all 0.4s ease;
+       -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+         -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+    @media(min-width: 768px) {
+    	left: 15%;
+    }
+	&:hover {
+		-webkit-transform: scale(1.6);
+		   -moz-transform: scale(1.6);
+		    -ms-transform: scale(1.6);
+		     -o-transform: scale(1.6);
+		        transform: scale(1.6);
+	    opacity: 1;
+	}
+}

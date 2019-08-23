@@ -1,0 +1,110 @@
+.main-screen__slider {
+	position: relative;
+}
+.slide-number {
+	color: white;
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 27px;
+	-webkit-align-self: baseline;
+	        align-self: baseline;
+	position: absolute;
+	top: 30%;
+    left: 32%;
+    transform: translate(-60%, -50%);
+}
+.slide-lenght {
+	color: white;
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 27px;
+	position: absolute;
+	top: 30%;
+    left: 46%;
+    transform: translate(0, -50%);
+}
+.main-screen__footer__line {
+	position: absolute;
+	opacity: 0.549;
+	width: 164px;
+  	height: 1px;
+  	border: 0.5px solid white;
+  	top: 45%;
+    left: 34%;
+}
+.zero {
+	display: none;
+	position: absolute;
+	color: white;
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 27px;
+	top: 30%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+}
+
+.main-screen__slider .owl-carousel .owl-nav button.owl-next, .main-screen__slider .owl-carousel .owl-nav button.owl-prev, .main-screen__slider .owl-carousel button.owl-dot {
+	color: white;
+	outline:none;
+	font-size: 14px;
+	letter-spacing: 0.28px;
+	font-family: 'Proxima Nova Rg';
+	font-weight: normal;
+	font-style: normal;
+}
+.main-screen__slider .owl-carousel .owl-nav button.owl-next {
+	position: absolute;
+	right: 40px;
+	top: 30%;
+	.transit();
+	&:hover, &:active, &:focus {
+		color: #e3a062;
+	}
+}
+
+
+.main-screen__slider .owl-carousel .owl-nav button.owl-next::before {
+	display: none;
+	@media(min-width: 1200px){
+		content: "";
+		display: block;
+		background-color: #e3a062;
+		width: 47px;
+		height: 1px;
+		position: absolute;
+		right: 50px;
+		top: 10px;
+	}
+}
+
+.main-screen__slider .owl-carousel .owl-nav button.owl-prev {
+	position: absolute;
+	left: 40px;
+	top: 30%;
+	&:hover, &:active, &:focus {
+		color: #e3a062;
+	}
+}
+.main-screen__slider .owl-carousel .owl-nav button.owl-prev::after {
+	display: none;
+	@media(min-width: 1200px){
+		content: "";
+		display: block;
+		background-color: #e3a062;
+		width: 47px;
+		height: 1px;
+		position: absolute;
+		left: 50px;
+		top: 10px;
+	}
+}
+.main-screen__slider .owl-theme-top .owl-dots .owl-dot.active span, .main-screen__slider.owl-theme-top .owl-dots .owl-dot:hover span {
+	display: none;
+}
+.main-screen__slider .owl-theme-top .owl-dots .owl-dot span {
+	display: none;
+}

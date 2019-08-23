@@ -1,0 +1,121 @@
+.header {
+	background: black;
+	opacity: 0.78;
+	display: flex;
+	font-family: 'Proxima Nova Rg';
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	z-index: 20;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+	@media(min-width: 1200px) {
+		opacity: 1;
+		background: transparent;
+		-webkit-justify-content: space-between;
+	        	justify-content: space-between;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		    -webkit-align-items: flex-start;
+		            align-items: flex-start;
+	    padding: 40px;
+	    position: static;
+	    margin-top: 0;
+	}
+	
+}
+.logo {
+	background-image: url(../img/logo.png);
+	width: 154px;
+	height: 38px;
+	-webkit-order: 0;
+	    -ms-order: 0;
+	        order: 0;
+}
+
+.header__nav {
+	display: none; 
+	-webkit-order: 1;
+		-ms-order: 1;
+		    order: 1;
+	@media(min-width: 1200px) {
+		display: block;
+		-webkit-order: 2;
+		    -ms-order: 2;
+		        order: 2;
+	}
+}
+
+.header__nav__item {
+	display: inline-block;
+	margin-right: 40px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.header__nav__item__link {
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.35px;
+	.transit;
+	&:hover, &:active, &:focus {
+		color: @orange_pj;
+		text-decoration: underline;
+	}
+}
+
+.mobile-menu {
+	display: block;
+	font-size: 14px;
+	line-height: 25px;
+	color: white;
+	text-transform: uppercase;
+	-webkit-order: 2;
+	    -ms-order: 2;
+	        order: 2;
+	top: 20px;
+	left: auto;
+	right: auto;
+	cursor: pointer;
+	z-index: 20;
+	position: relative;
+	@media(min-width: 1200px){
+		display: none;
+		-webkit-order: 1;
+		    -ms-order: 1;
+		        order: 1;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: 14px;
+		height: 11px;
+		display: block;
+		background-image: url(../img/Menu.png);
+		left: -20px;
+		top: 25%;
+		cursor: pointer;
+	}
+	.transit();
+	&:hover {
+		color: @orange_pj;
+	}
+}

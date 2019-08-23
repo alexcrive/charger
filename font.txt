@@ -1,0 +1,4 @@
+playfairdisplay bold
+playfairdisplay italic
+proximanova regular
+proximanova light

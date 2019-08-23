@@ -1,0 +1,118 @@
+.main-screen {
+	background: black;
+	background-image: url(../img/bg/main-screen-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	width: auto;
+	margin-top: -80px;
+	padding-top: 200px;
+	padding-bottom: 30px;
+	height: auto;
+	@media(min-width: 1200px) {
+		height: 980px;
+		width: auto;
+		margin-top: -120px;
+		padding-top: 250px;
+		padding-bottom: 60px;
+		height: 980px;
+	}
+}
+
+.main-screen__slider__item {
+	display: block;
+	background: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 30%;
+	@media(min-width: 1200px) {
+		width: 35%;
+		margin-bottom: 226px;
+	}
+}
+.main-screen__slider__item__title {
+	font-size: 30px;
+	line-height: 30px;
+	color: @orange_pj;
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 20px;
+	letter-spacing: 2.4px;
+	text-align: center;
+	@media(min-width: 768px) {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	@media(min-width: 1200px) {
+		font-size: 120px;
+		line-height: 120px;
+		margin-bottom: 40px;
+		text-align: left;
+	}
+	
+}
+
+.main-screen__footer {
+	display: none;
+	@media(min-width: 1200px) {
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		align-content: space-between;
+		font-family: 'Proxima Nova Rg';
+		font-weight: normal;
+		font-style: normal;
+		position: relative;
+	}
+}
+
+.main-screen__footer__social-network {
+	padding-left: 40px;
+}
+.main-screen__footer__social-network__item {
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 28px;
+	position: relative;
+	&:last-child{
+		margin-right: 0;
+	}
+	&:after {
+		position: absolute;
+		content: "/";
+		display: inline-block;
+		color: white;
+		top: 0;
+		right: -18px;
+	}
+	&:last-child::after {
+		content: "";
+		display: none;
+	}
+}
+.main-screen__footer__social-network__item__link {
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	text-decoration: none;
+	color: white;
+	.transit;
+	&:hover, &:active, &:focus {
+		color: @orange_pj;
+		text-decoration: underline;
+	}
+}
+
+.main-screen__footer__scroll {
+	color: white;
+	padding-right: 40px;
+	text-decoration: none;
+	.transit;
+	&:hover, &:active, &:focus {
+		color: @orange_pj;
+		text-decoration: underline;
+	}
+}

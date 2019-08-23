@@ -1,0 +1,36 @@
+.more-button {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1.05px;
+	padding: 14px 73px;
+	color: black;
+	border: 2px solid @orange_pj;
+	z-index: 9;
+	.transit(0.4s);
+	&:hover, &:active, &:focus {
+		color: @orange_pj;
+		border: 2px dashed @orange_pj;
+		-webkit-border-radius: 10px;
+		        border-radius: 10px;
+	}
+}
+
+.read-more-button {
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: @orange_pj;
+	font-size: 14px;
+	font-family: 'Proxima Nova Rg';
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 1.05px;
+	padding-bottom: 5px;	
+	.transit(0.4s);
+	border-bottom: 1px solid @orange_pj;
+	&:hover, &:active, &:focus {
+		color: white;
+		border-bottom: 1px dotted white;
+	}
+}

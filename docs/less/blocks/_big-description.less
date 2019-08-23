@@ -1,0 +1,40 @@
+.big-description {
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Proxima Nova Rg';
+	font-weight: normal;
+	font-style: normal;
+	color: white;
+	padding-right: 0;
+	letter-spacing: 0.4px;
+	margin-bottom: 20px;
+	@media(min-width: 1200px) {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 60px;
+		padding-right: 27%;
+	}
+}
+.big-description--black {
+	color: black;
+	padding-right: 0;
+	margin-bottom: 40px;
+}
+.blog--big-description {
+	color: black;
+	padding-right: 20px;
+	margin-bottom: 40px;
+	border-right: 1px solid rgb(180, 180, 180);
+	position: relative;
+	z-index: 1;
+}
+.blog--big-description:after {
+	position: absolute;
+	content: "";
+	width: 2px;
+  	height: 33%;
+  	border: 1px solid @orange_pj;
+	right: -1px;
+	top: 16%;
+	z-index: 2;
+}
